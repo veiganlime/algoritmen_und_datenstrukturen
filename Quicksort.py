@@ -1,4 +1,4 @@
-def qucksort(unsortierte_liste, liste_links, liste_rechts):
+def quck_sort(unsortierte_liste, liste_links, liste_rechts):
     if liste_links < liste_rechts:
         pivotIndex = partitionierung (unsortierte_liste, liste_links, liste_rechts)
         qucksort(unsortierte_liste, liste_links, pivotIndex-1)
