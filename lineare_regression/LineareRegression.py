@@ -20,8 +20,8 @@ dataframe.describe()
 print(dataframe.head(10))
 dataframe['Close']=pd.to_numeric(dataframe['Close'], errors='coerce')
 
-#plt.plot(dataframe.index, dataframe.Close)
-#plt.show()
+plt.plot(dataframe.index, dataframe.Close)
+plt.show()
 
 dataframe = dataframe.filter(items=['Close'])
 print(dataframe.head(10))
@@ -32,4 +32,4 @@ for i in range(5):
 print(dataframe.head(10))
 
 new_dataframe = dataframe.dropna(axis = 0, how = 'any')
-print(new_dataframe.head(10))
+print(new_dataframe.tail(10))
